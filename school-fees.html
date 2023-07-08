@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(function(){
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+      });
+    </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Heaven's Boon English Medium School</title>
@@ -10,7 +21,7 @@
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="assets/css/google-fonts.css" rel="stylesheet">
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -30,308 +41,191 @@
     ======================================================== -->
   </head>
   <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div class="container d-flex align-items-center">
-        <!--h1 class="logo me-auto"><a href="index.html">Heaven's Boon</a></h1-->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></h1-->
-        <h1 class="logo me-auto"><a href="index.html">Heaven's Boon</a></h1>
-		<nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <!--li><a href="courses.html">Courses</a></li-->
-            <li><a href="faculties.html">Faculties</a></li>
-            <!--li><a href="resources.html">Resources</a></li-->
-            <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#"><span>Admission</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="admission.html#playschool">Playschool</a></li>
-                  <li><a href="admission.html#nursery">Nursery</a></li>
-                  <li><a href="admission.html#primary">Primary</a></li>
-                  <!--li><a href="#">Upperprimary</a></li-->
-                  <li><a href="admission.html#secondary">Secondary</a></li>
-                </ul>
-              </li>
-			  <li><a href="events.html">Events</a></li>
-              <li><a href="calendar.html">School Calendar</a></li>
-              <!--li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li-->
-            </ul>
-            </li>
-			<li><a href="school-fees.html">Fees</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-        <a href="courses.html" class="get-started-btn">Get Started</a>
-      </div>
-    </header><!-- End Header -->
-
-  <main id="main">
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs" data-aos="fade-in">
-      <div class="container">
-        <h2>Pricing</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
-      </div>
-    </div><!-- End Breadcrumbs -->
-
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Playgroup</h3>
-              <h4><sup>₹</sup>500<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>
-
-          <!--div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-            <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div-->
-
-          <!--div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div-->
-
-          <!--div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div-->
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Nursery</h3>
-              <h4><sup>₹</sup>550<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>		  
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Lower Kindergarten</h3>
-              <h4><sup>₹</sup>600<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Upper Kindergarten</h3>
-              <h4><sup>₹</sup>650<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Standard I/II</h3>
-              <h4><sup>₹</sup>700<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>
-		   <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Standard III/IV</h3>
-              <h4><sup>₹</sup>750<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Standard V/VI</h3>
-              <h4><sup>₹</sup>800<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>		  
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Standard VII/VIII</h3>
-              <h4><sup>₹</sup>850<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>	
-          <div class="col-lg-3 col-md-6">
-            <div class="box featured">
-              <h3>Standard IX/X</h3>
-              <h4><sup>₹</sup>1000<span> / month</span></h4>
-              <ul>
-                <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
-				<li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Contact Now!</a>
-              </div>
-            </div>
-          </div>
-		  
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="footer-top">
+    <div id="header"></div>
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <div class="breadcrumbs" data-aos="fade-in">
         <div class="container">
+          <h2>Pricing</h2>
+          <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        </div>
+      </div>
+      <!-- End Breadcrumbs -->
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Heaven's Boon</h3>
-              <p>
-              <b>Branch 1 - </b>Noapara, Singur <br>
-              Near Delhi Road, Chandannagore<br>
-              Hooghly, West Bengal, India<br>
-              <b>Branch 2 - </b>Nursery Road, Baidyabati<br>
-              Hooghly, West Bengal, India
-              <br><br>
-              <strong>Mobile:</strong> +91 9038786769<br>
-              <strong>Email:</strong> heavensboon01@gmail.com<br>
-              </p>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Playgroup</h3>
+                <h4><sup>₹</sup>500<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-              </ul>
+            <!--div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+              <div class="box featured">
+                <h3>Business</h3>
+                <h4><sup>$</sup>19<span> / month</span></h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li>Pharetra massa</li>
+                  <li class="na">Massa ultricies mi</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Buy Now</a>
+                </div>
+              </div>
+            </div-->
+            <!--div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+              <div class="box">
+                <h3>Developer</h3>
+                <h4><sup>$</sup>29<span> / month</span></h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li>Pharetra massa</li>
+                  <li>Massa ultricies mi</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Buy Now</a>
+                </div>
+              </div>
+            </div-->
+            <!--div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+              <div class="box">
+                <span class="advanced">Advanced</span>
+                <h3>Ultimate</h3>
+                <h4><sup>$</sup>49<span> / month</span></h4>
+                <ul>
+                  <li>Aida dere</li>
+                  <li>Nec feugiat nisl</li>
+                  <li>Nulla at volutpat dola</li>
+                  <li>Pharetra massa</li>
+                  <li>Massa ultricies mi</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Buy Now</a>
+                </div>
+              </div>
+            </div-->
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Nursery</h3>
+                <h4><sup>₹</sup>550<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-              </ul>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Lower Kindergarten</h3>
+                <h4><sup>₹</sup>600<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
-                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                <form action="" method="post">
-                  <input type="email" name="email"><input type="submit" value="Subscribe">
-                </form>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Upper Kindergarten</h3>
+                <h4><sup>₹</sup>650<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Standard I/II</h3>
+                <h4><sup>₹</sup>700<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Standard III/IV</h3>
+                <h4><sup>₹</sup>750<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Standard V/VI</h3>
+                <h4><sup>₹</sup>800<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Standard VII/VIII</h3>
+                <h4><sup>₹</sup>850<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="box featured">
+                <h3>Standard IX/X</h3>
+                <h4><sup>₹</sup>1000<span> / month</span></h4>
+                <ul>
+                  <li>Admission Fees - <sup>₹</sup>3000<span> / year</span></li>
+                  <li>Pool Car - <sup>₹</sup>800<span> / month</span></li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact Now!</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container d-md-flex py-4">
-        <div class="me-md-auto text-center text-md-start">
-          <div class="copyright">
-          &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://facebook.com/heavensboonschool" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-    </footer><!-- End Footer -->
+      </section><!-- End Pricing Section -->
+    </main><!-- End #main -->
+    <div id="footer"></div>
     <div id="preloader"></div>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <!-- Vendor JS Files -->
